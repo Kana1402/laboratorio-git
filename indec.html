@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de Git para Desarrolladores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guía Esencial de Git</h1>
+        <p>Domina el control de versiones desde cero.</p>
+    </header>
+
+    <main class="container">
+        <section id="intro">
+            <h2>1. ¿Qué es Git?</h2>
+            <p>Git es un sistema de <strong>control de versiones distribuido</strong>. Permite rastrear cambios en los archivos y coordinar el trabajo de varias personas en un mismo proyecto.</p>
+        </section>
+
+        <section id="workflow">
+            <h2>2. El Flujo de Trabajo</h2>
+            <p>Git maneja tres estados principales para tus archivos:</p>
+            <ul>
+                <li><strong>Directorio de trabajo:</strong> Archivos modificados pero no preparados.</li>
+                <li><strong>Área de preparación (Staging):</strong> Archivos marcados para incluir en la próxima versión.</li>
+                <li><strong>Repositorio (Commit):</strong> Archivos guardados de forma segura en la base de datos local.</li>
+            </ul>
+        </section>
+
+        <section id="commands">
+            <h2>3. Comandos Básicos</h2>
+            <div class="command-box">
+                <code>git init</code>
+                <p>Crea un nuevo repositorio local en la carpeta actual.</p>
+            </div>
+            <div class="command-box">
+                <code>git add .</code>
+                <p>Agrega todos los cambios al área de preparación (staging).</p>
+            </div>
+            <div class="command-box">
+                <code>git commit -m "mensaje"</code>
+                <p>Crea una instantánea de los cambios con un mensaje descriptivo.</p>
+            </div>
+            <div class="command-box">
+                <code>git status</code>
+                <p>Muestra el estado actual del repositorio (archivos nuevos o modificados).</p>
+            </div>
+        </section>
+
+        <section id="branches">
+            <h2>4. Trabajando con Ramas</h2>
+            <p>Las ramas permiten trabajar en diferentes funcionalidades sin afectar el código principal.</p>
+            <div class="command-box">
+                <code>git branch nombre-rama</code>
+                <p>Crea una nueva rama.</p>
+            </div>
+            <div class="command-box">
+                <code>git checkout nombre-rama</code>
+                <p>Cambia a la rama especificada.</p>
+            </div>
+            <div class="command-box">
+                <code>git merge nombre-rama</code>
+                <p>Fusiona la rama indicada con la rama actual.</p>
+            </div>
+        </section>
+
+        <section id="remote">
+            <h2>5. Repositorios Remotos</h2>
+            <div class="command-box">
+                <code>git push origin main</code>
+                <p>Sube tus cambios locales al servidor remoto (como GitHub).</p>
+            </div>
+            <div class="command-box">
+                <code>git pull</code>
+                <p>Descarga e integra los cambios del servidor en tu local.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tutorial de Git &copy; 2026 - Guía rápida para programadores.</p>
+    </footer>
+
+</body>
+</html>
