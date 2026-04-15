@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al Sistema - GitDocs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f6f8fa;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .login-card {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 12px;
+            border: none;
+        }
+        .btn-git {
+            background-color: #24292e;
+            color: white;
+        }
+        .btn-git:hover {
+            background-color: #1b1f23;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card login-card shadow-sm p-4">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold">Iniciar Sesión</h2>
+                        <p class="text-muted small">Accede a tu repositorio de Git</p>
+                    </div>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label small" for="remember">Recordarme en este equipo</label>
+                        </div>
+                        <button type="submit" class="btn btn-git w-100 py-2 fw-bold">Entrar</button>
+                    </form>
+                    
+                    <div class="text-center mt-4">
+                        <a href="index.html" class="text-decoration-none small text-secondary">← Volver al Tutorial</a>
+                    </div>
+                </div>
+                <p class="text-center mt-3 text-muted small">&copy; 2026 UCR - Sede del Caribe</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
